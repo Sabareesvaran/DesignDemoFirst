@@ -8,16 +8,15 @@
     </div>
     <div class="navbar-collapse" id="navbarToggler">
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <select
-            class="form-control navBackground"
-            id="exampleFormControlSelect1"
-          >
-            <option style="color: black">Eng</option>
-            <option style="color: black">Eng2</option>
-            <option style="color: black">Eng3</option>
-          </select>
-        </li>
+
+        <div class="dropdown">
+          <button class="btn  dropdown-toggle btn-drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            <img style="height: 25px; width: 25px;" [src]="path" >  {{country}}
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <div (click)="btnchange(c)" class="dropdown-item" href="#" *ngFor="let c of countryArray"> <img style="height: 25px; width: 25px; margin-bottom: 5px;" [src]="c.path" > <span style="margin-left: 10px; align-self: center;">{{c.country}}</span></div>
+          </div>
+        </div>
         <li class="nav-item">
           <button class="button2">Signup</button>
         </li>
@@ -25,3 +24,4 @@
     </div>
   </div>
 </nav>
+
