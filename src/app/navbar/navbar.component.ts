@@ -9,12 +9,12 @@ export class NavbarComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {}
-  country = 'ENG';
+  country = 'Eng';
   path = 'assets/united-kingdom.png';
   countryArray = [
-    { path: 'assets/united-kingdom.png', country: 'ENG' },
+    { path: 'assets/united-kingdom.png', country: 'Eng' },
     // { path: 'assets/united-states.png', country: 'US' },
-    { path: 'assets/china.png', country: 'CHI' },
+    { path: 'assets/china.png', country: 'Chi' },
   ];
   btnchange(c: { path: string; country: string }) {
     this.country = c.country;

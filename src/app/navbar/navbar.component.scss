@@ -1,23 +1,22 @@
-.navtext{
-  color:white;
+.navtext {
+  color: white;
   margin-right: 25px;
   font-weight: bold;
 }
-.navtext:hover{
+.navtext:hover {
   transform: scale(1.05);
-
 }
 
-.button2{
+.button2 {
   margin-left: 40px;
   width: 140px;
   height: 45px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 11px;
-  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  // text-transform: uppercase;
   font-weight: bolder;
   letter-spacing: 2.5px;
-  font-weight: 500;
+  // font-weight: 500;
   color: white;
   background-color: #fff;
   border: none;
@@ -27,45 +26,80 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
- background-image: linear-gradient(to right, red , rgb(255, 196, 0));
-
+  background-image: linear-gradient(to right, red, rgb(255, 196, 0));
 }
 
-
-.button2:hover{
+.button2:hover {
   transform: scale(1.05);
 }
 
-.navBackground{
+.navBackground {
   background-color: transparent;
-   border: none;
-   color: white;
+  border: none;
+  color: white;
 }
-// .select-style {
-//   border: 1px solid #ccc;
-//   width: 100px;
-//   border-radius: 3px;
-//   overflow: hidden;
-//   // background: #fafafa url("img/icon-select.png") no-repeat 90% 50%;
-// }
 
-// .select-style select {
-//   // color: white;
-//   padding: 5px 8px;
-//   width: 130%;
-//   border: none;
-//   box-shadow: none;
-//   background: transparent;
-//   background-image: none;
-//   -webkit-appearance: none;
-// }
-
-// .select-style select:focus {
-//   outline: none;
-// }
-
-
-.btn-drop{
+.btn-drop {
   color: white;
   background-color: transparent;
+  // border-color: white;
+  border-width: thin;
+border: 1px solid lightgray;
+  border-style: groove;
+
+  margin-left: 40px;
+  width: 140px;
+  height: 45px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+  box-shadow: none;
+  color: white;
+
+  border-radius: 45px;
+
+  cursor: pointer;
+  outline: none;
+}
+.button3{
+  background-color: transparent; /* Green */
+  border: 1px solid lightgray;
+  border-width:thin;
+  border-radius:25px;
+  color: black;
+  padding: 8px 30px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }

@@ -10,15 +10,15 @@
       <ul class="navbar-nav ml-auto">
 
         <div class="dropdown">
-          <button class="btn  dropdown-toggle btn-drop" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
-            <img style="height: 25px; width: 25px;" [src]="path" >  {{country}}
+          <button class="button3" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-expanded="false">
+            <img style="height: 25px; width: 25px; border-style: solid; border-color: white; border-width: thin; border-radius: 50%;" [src]="path" >  {{country}} <i class="arrow down" style="color: white; margin-left: 10px;"></i>
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
             <div (click)="btnchange(c)" class="dropdown-item" href="#" *ngFor="let c of countryArray"> <img style="height: 25px; width: 25px; margin-bottom: 5px;" [src]="c.path" > <span style="margin-left: 10px; align-self: center;">{{c.country}}</span></div>
           </div>
         </div>
         <li class="nav-item">
-          <button class="button2">Signup</button>
+          <button class="button2">Sign Up</button>
         </li>
       </ul>
     </div>
